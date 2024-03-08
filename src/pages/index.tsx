@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Kiwi_Maru } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const KiwiMaru = Kiwi_Maru({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-24 ${KiwiMaru.className}`}
     >
-     
-       <h1>すなおなすなば</h1>
-       
+      <p className="{KiwiMaru.className}, kiwi-border" >すなおなすなば</p>
     </main>
   );
 }
